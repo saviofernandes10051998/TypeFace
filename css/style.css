@@ -1,0 +1,105 @@
+/* ==========================================================
+   Web Type Hierarchies — Savio Fernandes
+   Shared styles + one theme per hierarchy page
+   ========================================================== */
+
+body { margin: 0; }
+
+.site-nav { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.site-nav .navbar-brand { font-weight: 700; letter-spacing: .02em; }
+
+.site-footer {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: .875rem;
+  padding: 2rem 0;
+  opacity: .8;
+}
+
+/* ---------- Spec sheet (shared) ---------- */
+.spec { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid currentColor; }
+.spec-title { font-size: 1.25rem; font-weight: 700; margin-bottom: .25rem; }
+.spec-sub { font-size: .9rem; opacity: .75; margin-bottom: 1.5rem; }
+.spec-card {
+  border: 1px solid rgba(127,127,127,.35);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  height: 100%;
+}
+.spec-card h5 { font-family: system-ui, sans-serif; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; margin-bottom: .75rem; opacity: .8; }
+.spec-card dl { margin: 0; font-family: "Courier New", monospace; font-size: .8rem; }
+.spec-card dt { font-weight: 700; opacity: .7; }
+.spec-card dd { margin-bottom: .4rem; }
+
+/* ---------- Home page ---------- */
+.home { background: #f6f3ee; color: #1d1d1f; font-family: "DM Sans", sans-serif; }
+.home h1 { font-family: "DM Serif Display", serif; font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.05; }
+.home .lead { font-size: 1.15rem; max-width: 40rem; }
+.home .card { border: none; border-radius: 14px; overflow: hidden; height: 100%; transition: transform .2s ease; }
+.home .card:hover { transform: translateY(-4px); }
+.home .card .tag { font-size: .75rem; text-transform: uppercase; letter-spacing: .12em; opacity: .8; }
+.home .card h2 { font-size: 1.6rem; margin: .5rem 0; }
+.home .card a { color: inherit; font-weight: 700; }
+.card-jazz    { background: #0f1a2e; color: #f3e6c4; }
+.card-jazz h2 { font-family: "Bodoni Moda", serif; }
+.card-transit { background: #ffffff; color: #1b1b1b; border: 2px solid #1b1b1b !important; }
+.card-transit h2 { font-family: "Barlow", sans-serif; font-weight: 800; text-transform: uppercase; }
+.card-arcade  { background: #1a0b2e; color: #e9e3ff; }
+.card-arcade h2 { font-family: "Silkscreen", sans-serif; font-size: 1.3rem; color: #39ff9f; }
+
+/* ==========================================================
+   HIERARCHY 1 — Two Typefaces
+   Bodoni Moda + Work Sans · Perfect Fourth scale (1.333)
+   ========================================================== */
+.h-jazz { background: #0f1a2e; color: #e8e2d4; }
+.h-jazz h1, .h-jazz h2, .h-jazz h3, .h-jazz h4 { font-family: "Bodoni Moda", serif; color: #f3d98b; }
+.h-jazz h1 { font-size: 4.209rem; font-weight: 800; line-height: 1.05; }
+.h-jazz h2 { font-size: 3.157rem; font-weight: 700; line-height: 1.1; }
+.h-jazz h3 { font-size: 2.369rem; font-weight: 600; line-height: 1.15; }
+.h-jazz h4 { font-size: 1.777rem; font-weight: 500; font-style: italic; line-height: 1.2; }
+.h-jazz em, .h-jazz .emphasis { font-family: "Bodoni Moda", serif; font-size: 1.333rem; font-style: italic; font-weight: 500; color: #f3d98b; line-height: 1.5; }
+.h-jazz p, .h-jazz li { font-family: "Work Sans", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.75; }
+.h-jazz a { font-family: "Work Sans", sans-serif; font-weight: 600; color: #f3d98b; text-decoration: underline; text-underline-offset: 3px; }
+.h-jazz a:hover { color: #ffffff; }
+.h-jazz .kicker { font-family: "Work Sans", sans-serif; font-size: .8rem; letter-spacing: .25em; text-transform: uppercase; color: #9fb3d1; }
+
+/* ==========================================================
+   HIERARCHY 2 — One Typeface
+   Barlow only (weights 300–800) · Major Third scale (1.25)
+   ========================================================== */
+.h-transit { background: #f4f4f1; color: #1b1b1b; font-family: "Barlow", sans-serif; }
+.h-transit h1 { font-size: 3.052rem; font-weight: 800; text-transform: uppercase; letter-spacing: -.01em; line-height: 1.05; }
+.h-transit h2 { font-size: 2.441rem; font-weight: 700; line-height: 1.1; border-left: 8px solid #d62828; padding-left: .75rem; }
+.h-transit h3 { font-size: 1.953rem; font-weight: 600; line-height: 1.2; }
+.h-transit h4 { font-size: 1.563rem; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; color: #d62828; line-height: 1.25; }
+.h-transit em, .h-transit .emphasis { font-size: 1.25rem; font-weight: 600; font-style: italic; line-height: 1.5; }
+.h-transit p, .h-transit li { font-size: 1rem; font-weight: 400; line-height: 1.7; }
+.h-transit a { font-weight: 700; color: #0057b8; text-decoration: none; border-bottom: 2px solid #0057b8; }
+.h-transit a:hover { background: #0057b8; color: #fff; }
+.h-transit .kicker { font-size: .85rem; font-weight: 300; letter-spacing: .3em; text-transform: uppercase; }
+.h-transit .line-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+
+/* ==========================================================
+   HIERARCHY 3 — Designer's Choice
+   Silkscreen + Nunito · Perfect Fifth scale (1.5)
+   ========================================================== */
+.h-arcade { background: #1a0b2e; color: #e9e3ff; }
+.h-arcade h1, .h-arcade h2, .h-arcade h3 { font-family: "Silkscreen", sans-serif; font-weight: 400; }
+.h-arcade h1 { font-size: 5.063rem; line-height: 1; color: #39ff9f; text-shadow: 4px 4px 0 #ff3cac; }
+.h-arcade h2 { font-size: 3.375rem; line-height: 1.05; color: #ff3cac; }
+.h-arcade h3 { font-size: 2.25rem; line-height: 1.15; color: #ffd23f; }
+.h-arcade h4 { font-family: "Nunito", sans-serif; font-size: 1.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; color: #7df9ff; line-height: 1.3; }
+.h-arcade em, .h-arcade .emphasis { font-family: "Nunito", sans-serif; font-size: 1.25rem; font-weight: 700; font-style: italic; color: #ffd23f; line-height: 1.5; }
+.h-arcade p, .h-arcade li { font-family: "Nunito", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.75; }
+.h-arcade a { font-family: "Nunito", sans-serif; font-weight: 800; color: #39ff9f; text-decoration: underline wavy; text-underline-offset: 4px; }
+.h-arcade a:hover { color: #ff3cac; }
+.h-arcade .kicker { font-family: "Silkscreen", sans-serif; font-size: .9rem; color: #7df9ff; }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 576px) {
+  .h-jazz h1 { font-size: 2.8rem; }
+  .h-jazz h2 { font-size: 2.2rem; }
+  .h-transit h1 { font-size: 2.3rem; }
+  .h-transit h2 { font-size: 1.9rem; }
+  .h-arcade h1 { font-size: 3rem; }
+  .h-arcade h2 { font-size: 2.2rem; }
+}
