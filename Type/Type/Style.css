@@ -1,0 +1,121 @@
+body {
+   font-family: 'Netflix Sans', sans-serif;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.navbar {
+   background-color: #333;
+   color: white;
+   padding: 10px 20px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar .brand {
+   font-weight: bold;
+}
+
+.nav-links {
+   list-style-type: none;
+}
+
+.nav-links li {
+   display: inline;
+   margin-right: 40px;
+}
+
+.nav-links a {
+   color: white;
+   text-decoration: none;
+}
+
+.title-section {
+  text-align:center; 
+  padding:.5em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.content {
+  display:flex; 
+  justify-content:center; 
+  margin-top:auto
+}
+
+.hierarchy { 
+  width:auto; 
+  margin:auto; 
+  max-width:min(100%,750px); 
+  padding:.5em
+}
+
+.typography-section { 
+  margin-bottom:.5em
+}
+
+.text-info {
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center
+}
+.font-info {
+  display:flex; 
+  justify-content:space-between; 
+  align-items:left;
+}
+.text-info p { 
+  flex-grow:.7; 
+  margin-right:.5em
+}
+
+.text-info code { 
+  flex-grow:.3; 
+  text-align:right; 
+  color:#666666; 
+  font-size: 0.65em; /* Slightly smaller for aesthetics */
+  line-height: 1.5em; /* Improved readability */
+}
+
+ p { 
+   font-size: 1rem;
+   color: black;
+  }
+
+
+h1 { font-weight:bold;
+   font-size: 2.98rem; }
+h2 { font-weight:bold;
+   font-size: 2.48rem; }
+h3 { font-weight:bold;
+   font-size: 2.07rem; }
+h4 { font-weight:bold;
+   font-size: 1.72rem; }
+em { font-weight:bold;
+   font-size: 1rem; 
+}
+
+a { 
+  color:#36ABFD; 
+  transition:.3s ease-in-out all
+}
+
+a:hover { 
+  color:#2C8BD0; 
+  text-decoration:none
+}
+
+hr { 
+  border-top:.5px solid #ccc
+}
+
+.footer { 
+  text-align:center; 
+  padding:.5em; 
+  background-color:#333; 
+  color:white; 
+  margin-top:auto
+}
